@@ -4,7 +4,7 @@ var circleMenu = false;
 
 /* loader should be running, begin move left animation
 on complete */
-
+$( window ).on( "load", function() {
 $(document).ready( function loaded(){
   moveLoader();
   setTimeout(function () {
@@ -26,7 +26,7 @@ function moveLoader() {
     }, 1000);
   }, 2000);
 }
-
+});
 /* Load up the name and sub on loader moved left */
 function loadHomepageText() {
   $(".homepage-text").load("components/homepage_text.html", function() {
@@ -182,11 +182,34 @@ $(".square").hover(function enterSquare() {
 }
 );
 
+/* ordered image fader functions */
+var orderSquare = 0;
+var removeSquare = -7;
+setInterval(function () {
+  $(".square" + orderSquare).addClass("trans").removeClass("trans-out");
+  orderSquare++;
+  console.log("second" + orderSquare);
+  if (orderSquare > 24) {
+    orderSquare = 0;
+  }
+}, 300);
+
+setInterval(function () {
+  $(".square" + removeSquare).removeClass("trans").addClass("trans-out");
+  removeSquare++;
+  console.log("second" + orderSquare);
+  if (removeSquare > 24) {
+    removeSquare = 0;
+  }
+}, 300);
+
+
+/* random image fader functions
+if (window.innerWidth < 1) {
 setInterval(function() {
   var randomSquare = randomSquareValue(24, 1);
   console.log(randomSquare);
   activateSquare(randomSquare);
-
 }, 700);
 
 function activateSquare(randomSquare) {
@@ -202,7 +225,8 @@ function activateSquare(randomSquare) {
     return Math.floor((Math.random() * (max - min + 1) + min));
  }
 
-
+}
+*/
 /* END CONTACT PAGE IMAGE FADER SYSTEM
 
 
