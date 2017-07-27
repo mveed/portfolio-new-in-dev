@@ -1,0 +1,260 @@
+
+/*
+* {
+  border: solid 1px pink;
+}
+*/
+
+
+
+
+
+
+.jumbotron {
+  background-image: url(http://res.cloudinary.com/mveed/image/upload/v1495249726/jumbotron_background_u79tde.png);
+  background-size: cover;
+  min-height: 880px;
+  /* alternative, shrinks jumbotron image
+    padding-top: 30%;
+  padding-bottom: 30%;
+  */
+  background-position: center;
+  font-size: 80px;
+}
+
+.title-container {
+  text-align: center;
+  padding-top: 320px;
+  color: white;
+}
+
+h2#bullshit {
+  font-size: 75px;
+}
+
+#learn-more {
+   border-radius: 0px;
+  border-color: white;
+ background-color: black;
+  color: #21a273;
+  width: 20%;
+  min-height: 45px;
+  margin-top: 10px;
+  white-space: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  white-space: normal;
+  transition-duration: 0.4s;
+}
+
+#learn-more:hover {
+  background-color: #21a273;
+  color: white;
+}
+
+.green-hex {
+  color: #21a273;
+  position: absolute;
+  top:50%;
+  left:50%;
+  text-align:center;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#hex-text {
+  font-size: 2.1em;
+}
+
+
+
+.design-text {
+
+}
+
+.about {
+  background-color: #21a273;
+  color: white;
+  margin: 0px;
+  padding-top: 0px;
+}
+
+.snail-bg {
+  background-image: url(http://res.cloudinary.com/mveed/image/upload/v1495249729/snail_background_mudjmi.png);
+  background-size: cover;
+  color: white;
+  background-position: center;
+}
+
+#random-stuff {
+  padding: 10% 5%;
+
+}
+
+#no-reason {
+  padding: 0px 0px 0px 19%;
+}
+
+#no-reason2 {
+  padding: 0px 18% 0px 0px;
+  margin-top: 9px;
+}
+
+#random-lorem {
+  padding: 7%;
+}
+
+.h-line {
+  border-top: 5px solid #ffffff;
+  border-bottom: 1px solid #fffff;
+  width: 65%;
+  margin: 2px auto;
+}
+
+
+.navbar {
+  background-color: #21a273;
+  z-index: 9999;
+
+}
+
+.navbar-left{
+  color: white;
+  font-size: 3.1rem;
+  padding: 0px;
+  margin: 0px;
+  display: inline;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#nav-logo {
+  padding-top: 4px;
+}
+
+#myNavbar {
+  color: white;
+
+}
+
+.navbar-right {
+  color: white;
+
+}
+
+
+
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+    font-weight: bold;
+  padding-right: 40%;
+  letter-spacing: 6px;
+}
+
+.icon-bar {
+  background-color: white;
+}
+
+.navbar.navbar-default {
+  padding: 0px 0;
+  border: none;
+  background-color: rgba( 33,162,115, 0.9);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-right li:hover {
+  color: black;
+  background-color: white;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+.contact-stuff {
+  margin: 100px auto;
+}
+
+.contact-logo {
+
+}
+
+#at {
+  padding-bottom: 10px;
+  font-size: 4.1em;
+}
+
+#contact-info {
+  text-align: left;
+  font-weight: 900;
+  padding-left: 35px;
+}
+
+#contact-word {
+  color: #21a273;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footers {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+}
+
+#footer-left {
+  color: white;
+  text-align: left;
+  padding-left: 25px;
+  float: left;
+}
+
+#footer-right {
+  color: white;
+  text-align: right;
+  padding-right: 25px;
+  float: right;
+}
+
+#footerstuff {
+  margin: 0px;
+}

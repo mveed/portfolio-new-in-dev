@@ -1,0 +1,341 @@
+body {
+  color: white;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.title-container {
+  padding-bottom: 70px;
+  text-align: center;
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/title_bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.nav-menu {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 1);
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav-menu {
+  transition: background-color 0.5s ease;
+  background-color:rgba(0, 0, 0, 0.0);
+}
+
+.nav-menu:hover {
+  background-color: black;
+}
+
+.nav-logo {
+  position: absolute;
+  max-width: 200px;
+  left: 13px;
+  top: 11px;
+}
+
+.nav-links li {
+  display: inline-block;
+  position: absolute;
+  right: 2px;
+  padding: 5px 5px;
+  font-size: 13px;
+  letter-spacing: 3px;
+  top: 20px;
+  font-weight: bold;
+}
+
+.logo-img {
+  min-width: 160px;
+  max-width: 35%;
+  padding-top: 45px;
+  padding-bottom: 60px;
+}
+
+.down-arrow {
+  display: block;
+  max-width: 20px;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding:10px 5px;
+  transition: transform 0.2s ease;
+}
+
+.down-arrow:hover{
+  transform: translateY(-10px);
+}
+
+.welcome {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  background-color: #21a273;
+  color: white;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+.welcome-content {
+  padding: 0px 30px;
+}
+
+.skills {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  line-height: 125%;
+}
+
+.skill-col {
+  display: inline-block;
+  min-width: 185px;
+  max-width: 25%;
+  vertical-align: top;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 455px) {
+  .skill-col {
+    max-width: 80%;
+  }
+
+}
+
+
+.skill-icons {
+  max-width: 25%;
+  min-width: 75px;
+  padding-bottom: 5px;
+}
+
+.sm-card-text {
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.horizontal-line {
+  border-bottom: black solid 3px;
+  margin: 5px 43%;
+  text-align: center;
+}
+
+.content-area {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/backcountry_ski.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  width: auto;
+  background-position: center;
+  text-align: center;
+}
+
+
+
+.content-card-outer {
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  min-width: 145px;
+  max-width: 25%;
+  margin: 25px auto;
+  display: block;
+}
+
+@media only screen and (max-width: 755px) {
+  .content-card-outer {
+    max-width: 40%;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .content-card-outer {
+    max-width: 80%;
+  }
+}
+.content-card-inner {
+  border: 3px solid black;
+  padding: 5px;
+  color: black;
+  line-height: 125%;
+  font-size: 18px;
+}
+
+.content-text-block {
+  display: block;
+  margin: 5px 15px;
+}
+
+.skills .project-card {
+  display: block;
+  text-align: center;
+  margin: auto;
+  background-size: cover;
+  min-width: 175px;
+  max-width: 25%;
+}
+
+#project-1 {
+  background-image: url('../img/project_1.png');
+  background-position: center;
+      box-shadow: 0px 0px 7px 2px #888888;
+}
+
+#project-2 {
+  background-image: url('../img/project_2.png');
+  background-position: center;
+      box-shadow: 0px 0px 7px 2px #888888;
+}
+
+.skills .content-card-outer {
+  opacity: 0;
+  max-width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.skills .content-card-inner {
+  height: 85%;
+}
+
+.skills .content-card-outer:hover {
+  opacity: 80;
+}
+
+.content-3.content-area {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/mountain_snow.jpg')
+}
+
+#contact {
+  /* overriding content-area padding class also applied to hex-image */
+  padding-bottom: 85px;
+}
+
+.contact-form {
+  width: 50%;
+  text-align: left;
+  margin: 10px auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.form-field {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-height: 30px;
+}
+
+.contact-form label {
+  padding-bottom: 50px;
+}
+
+#subject {
+  height: 200px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.resize-hex {
+  max-width: 50%;
+  height: auto;
+  min-width: 160px;
+}
+
+.bottom-footer {
+  background-color: black;
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  width: 100%;
+  height: 20px;
+}
+
+.up-arrow {
+  display: inline-block;
+  max-width: 20px;
+  position: absolute;
+  right: 48%;
+  padding: 5px;
+}
+
+.footer-text {
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  padding: 7px;
+  font-weight: bold;
+}
+
+/* SLIDE ANIMATION */
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1.3s;
+    -webkit-animation-duration: 1.3s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/*
+* {
+  border-width: 1px !important;
+  border-color: pink !important;
+  border-style: solid !important;
+}
